@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+body{
+   font-family: Lato;
+   color: #424551;
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.page__title{
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+color: #1E212C;
+margin-bottom: 40px;
+}
+.page__main-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+margin-bottom: 48px;
+}
+.title-two{
+font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+color: #1E212C;
+margin-bottom: 24px;
+}
+.page_text{
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+}
+.page_text ul{
+   margin-bottom: 60px;
+}
+.page_text li{
+   margin-bottom: 4px;
+   padding-left: 32px;
+   background: url('../img/icons/check.svg') 0 center no-repeat;
+   min-height: 25px;
+}
+.curator{
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+color: #1E212C;
+margin-bottom: 8px;
+}
+.title-three{
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+color: #1E212C;
+margin-bottom: 16px;
+}
+.senior{
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #787A80;
+margin-bottom: 16px;
+}
+.block{
+margin-bottom: 32px;
+font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+}
+.block p{
+   margin-bottom: 4px;
+   padding-left: 22px;
+   min-height: 25px;  
+}
+.block p:first-child{
+   background: url('../img/icons/Star.svg') 0 center no-repeat;
+}
+.block p:nth-child(2){
+   background: url('../img/icons/Play.png') 0 center no-repeat;
+}
+.block p:last-child{
+   background: url('../img/icons/Profile.svg') 0 center no-repeat;
+}
+.end{
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+margin-bottom: 32px;
+}
+
+.list{
+   margin-top: 50px;
+   margin-bottom: 30px;
+   line-height: 150%;
+}
+.first:hover{
+	color: red;
+}
+.second:active {
+	color: green;
+}
+.third:visited{
+	color: yellow;
+}
+.lorem{
+   background-color: #7A956B;
+	color: #fff;
+	padding: 15px;
+   margin-bottom: 30px;
+}
+.lorem:hover .item{
+   opacity: 0;
+   visibility: hidden;
+}
+ul{
+   margin-left: 20px;
+}
+ul ul{
+   display: none;
+}
+ul li:hover ul{
+	display: block;
+}
+.first:focus{
+	outline: 1px solid red;
+}
+.block__item{
+	background-color: #6b8595;
+	color: #fff;
+	padding: 15px;
+	display: none;
+   margin-bottom: 30px;
+}
+.block__item:target{
+	display: block;
+}
+span::before{
+	content: "("; 
+}
+span::after {
+	content: ")";
+}
+.after ul li::before{
+	background: url('../img/icons/check.svg') 0 0 no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+}
+.after ul li:hover::before{
+	transform: scale(1.5);
+}
+.after{
+   margin-bottom: 30px;
+}
+ol{
+	margin-left: 20px;
+	margin-bottom: 20px;
+
+	counter-reset: item;
+}
+
+ol li::before{
+	counter-increment: item;
+	content: counter(item) ". ";
+	display: inline-block;
+	margin-right: 5px;
+}
+ol li:not(:last-child) {
+	margin-bottom: 20px;
+}
+.block2{
+   width: 100px;
+   height: 20px;
+}
+.block3{
+   width: 20px;
+   height: 200px;
+   
+}
+.block4{
+   width: 300px;
+   height: 20px;
+   
+}
+.block5{
+   width: 20px;
+   height: 80px;
+   margin-left: 280px;
+}
+.block6{
+   width: 200px;
+   height: 20px;
+   margin-left: 280px;
+}
+.block7{
+   width: 60px;
+   height: 20px;
+   margin-left: 450px;
+}
+.end{
+   opacity: 0;
+   visibility: hidden;
+}
+.block2:hover{
+   background-color: aqua;
+}
+.block3:hover{
+   background-color: aqua;
+}
+.block4:hover{
+   background-color: aqua;
+}
+.block5:hover{
+   background-color: aqua;
+}
+.block6:hover{
+   background-color: aqua;
+}
+.block7:hover{
+   background-color: aqua;
+}
+.block7:hover .end{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+
+
